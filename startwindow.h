@@ -1,14 +1,32 @@
-#ifndef STARTWINDOW_H
-#define STARTWINDOW_H
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
+#include <QtWidgets>
+#include <QtGui>
+#include <QPushButton>
+#include <QMessageBox>
 
-#include <QtWidget>
+#include "quadr_calc.h"
+#include "triangl_calc.h"
+#include "plantext.h"
 
-class StartWindow : public QWidget
+class MainWindow : public QWidget
 {
     Q_OBJECT
-
 public:
-    startWindow(QWidget *parent = nullptr);
-    ~StartWindow();
+    MainWindow(QWidget *parent = nullptr);
+    QGridLayout *mainGrid; 
+    QPushButton *push_button_1;
+    QPushButton *push_button_2;
+    QPushButton *push_button_3;
+
+    quadr_calc *calc;
+    triangl_calc *calcTriangl;
+    planText *planTexte;
+
+ public slots:
+
+    void push_button_1_clicked();
+    void push_button_2_clicked();
+    void push_button_3_clicked();
 };
-#endif // STARTWINDOW_H
+#endif // MAINWINDOW_H
