@@ -26,7 +26,7 @@ quadr_calc::quadr_calc(QWidget *parent) : QWidget(parent)
     mainGrid->addWidget(condition, 0, 0, 1, 6);
     mainGrid->addWidget(num_A, 2, 0, 1, 1);
     mainGrid->addWidget(text_x2, 2, 1, 1, 1);
-    mainGrid->addWidget(num_b, 2, 2, 1, 1);
+    mainGrid->addWidget(num_B, 2, 2, 1, 1);
     mainGrid->addWidget(text_x, 2, 3, 1, 1);
     mainGrid->addWidget(num_C, 2, 4, 1, 1);
     mainGrid->addWidget(text_equally, 2, 5, 1, 1);
