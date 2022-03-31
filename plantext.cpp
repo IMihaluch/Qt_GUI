@@ -1,4 +1,4 @@
-#include "planText.h"
+#include "plantext.h"
 
 planText::planText(QWidget *parent) : QWidget(parent)
 {
