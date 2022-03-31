@@ -6,7 +6,7 @@
 #include <QPushButton>
 #include <QMessageBox>
 
-class planeText : public QWidget
+class planText : public QWidget
 {
     Q_OBJECT
 public:
