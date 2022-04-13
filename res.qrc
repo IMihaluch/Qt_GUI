@@ -5,7 +5,7 @@
         <file>Icons/save.png</file>
         <file>Icons/main.png</file>
     </qresource>
-    <qresource prefix="/Txt">
+    <qresource prefix="/txt">
         <file>readme.txt</file>
     </qresource>
 </RCC>
