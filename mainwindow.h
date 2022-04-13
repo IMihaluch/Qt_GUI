@@ -22,7 +22,6 @@ private:
  public slots:
 
     void push_button_1_clicked();
-    void push_button_2_clicked();
-    void push_button_3_clicked();
+   
 };
 #endif // MAINWINDOW_H
