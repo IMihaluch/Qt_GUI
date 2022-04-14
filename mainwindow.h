@@ -5,7 +5,7 @@
 #include <QPushButton>
 #include <QMessageBox>
 
-#include "parserhtml.h"
+#include "htmlparser.h"
 
 class MainWindow : public QWidget
 {
