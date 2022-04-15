@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/Icons">
+        <file>Icons/help.png</file>
+        <file>Icons/open.png</file>
+        <file>Icons/save.png</file>
+        <file>Icons/main.png</file>
+        <file>Icons/setings.png</file>
+    </qresource>
+    <qresource prefix="/txt">
+        <file>readme.txt</file>
+    </qresource>
+    <qresource prefix="/translation">
+        <file>RUS.qm</file>
+    </qresource>
+</RCC>
