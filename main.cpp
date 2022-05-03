@@ -1,5 +1,3 @@
-#include "mainwindow.h"
-
 #include "editortexts.h"
 #include <QApplication>
 #include <QStyleFactory>
