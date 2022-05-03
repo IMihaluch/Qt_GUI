@@ -50,11 +50,11 @@ private:
 
     void closeEvent(QCloseEvent * event) override;
     QMessageBox *m_Exit {nullptr};
-    QPushButton *Y {nullptr};
-    QPushButton *N {nullptr};
+    QPushButton *Ok {nullptr};
+    QPushButton *Cancel {nullptr};
     QMessageBox *m_TabClose {nullptr};
-    QPushButton *Y_Close {nullptr};
-    QPushButton *N_Close {nullptr};
+    QPushButton *Ok_Close {nullptr};
+    QPushButton *Cancel_Close {nullptr};
 
     protected:
     
