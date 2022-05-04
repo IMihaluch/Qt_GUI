@@ -284,8 +284,8 @@ void EditorTexts::retranslateUI()
     m_TabClose->setText(tr("Save changes?"));
     Ok->setText(tr("Ok"));
     Cancel->setText(tr("Cancel"));
-    OkClose->setText(tr("Ok"));
-    CancelClose->setText(tr("Cancel"));
+    Ok_Close->setText(tr("Ok"));
+    Cancel_Close->setText(tr("Cancel"));
 
     setting->retranslateUI();
     }
@@ -350,7 +350,7 @@ void EditorTexts::closeTab_A(int _tab)
     if(tab_A->tabText(_tab)[0] == '*') {
         m_TabClose->setIcon(QMessageBox::Information);
         m_TabClose->exec();
-        if (m_TabClose->clickedButton() == OkClose){
+        if (m_TabClose->clickedButton() == Ok_Close){
             on_buttonSave_clicked(); 
         }
     }
