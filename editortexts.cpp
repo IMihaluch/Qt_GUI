@@ -22,7 +22,7 @@ EditorTexts::EditorTexts(QWidget *parent) : QMainWindow(parent)
 
     mainGrid = new QGridLayout(this);
     centralWgt = new QWidget(this);
-    openreadA = new QAction(this);
+    openread_A = new QAction(this);
     action_Open = new QAction(this);
 
     but_Open = new QToolButton(this);
@@ -31,7 +31,7 @@ EditorTexts::EditorTexts(QWidget *parent) : QMainWindow(parent)
     but_Open->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     but_Open->setPopupMode(QToolButton::MenuButtonPopup);
     but_Open->addAction(action_Open);
-    but_Open->addAction(openreadA);
+    but_Open->addAction(openread_A);
     but_Open->setFixedSize(40, 30);
    
     but_Save = new QPushButton(this);
@@ -112,7 +112,7 @@ EditorTexts::EditorTexts(QWidget *parent) : QMainWindow(parent)
     connect(but_Save, SIGNAL(clicked()), this, SLOT(on_but_Save_clicked()));
     connect(but_Print, SIGNAL(clicked()), this, SLOT(on_action_Print_clicked()));
     connect(but_Help, SIGNAL(clicked()), this, SLOT(on_but_Help_clicked()));
-    connect(openreadA, SIGNAL(triggered()), this, SLOT(on_but_OpenOnlyRead_clicked()));
+    connect(openread_A, SIGNAL(triggered()), this, SLOT(on_but_OpenOnlyRead_clicked()));
     connect(but_Settings, SIGNAL(clicked()), this, SLOT(on_but_Settings_clicked()));
     connect(setting, SIGNAL(retranslate()), this, SLOT(retranslateUI()));
     connect(setting, SIGNAL(redraw(QString, QPalette)), this, SLOT(redrawUI(QString, QPalette)));
