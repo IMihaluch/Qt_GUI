@@ -128,8 +128,8 @@ EditorTexts::EditorTexts(QWidget *parent) : QMainWindow(parent)
     connect(action_Exit, SIGNAL(triggered(bool)), this, SLOT(close()));
     connect(action_Setings, SIGNAL(triggered(bool)), this, SLOT(on_but_Settings_clicked()));
     connect(action_Help, SIGNAL(triggered(bool)), this, SLOT(on_but_Help_clicked()));
-    connect(tab_A, SIGNAL(currentChanged(int)), this, SLOT(changeTabArea())); //вкладка
-    connect(tab_A, SIGNAL(tabCloseRequested(int)), this, SLOT(closeTabArea(int)));
+    connect(tab_A, SIGNAL(currentChanged(int)), this, SLOT(changeTab_A())); //вкладка
+    connect(tab_A, SIGNAL(tabCloseRequested(int)), this, SLOT(closeTab_A(int)));
 
     retranslateUI();
     redrawUI(setting->getQss(), setting->getPalette());
@@ -139,12 +139,12 @@ void TextEditor::closeEvent(QCloseEvent *event)
 {
         event->ignore();
 
-        messExit->setIcon(QMessageBox::Information);
-        messExit->exec();
+        m_Exit->setIcon(QMessageBox::Information);
+        m_Exit->exec();
 
-        if (messExit->clickedButton() == yes) {
-            while(tabArea->count() != 0){
-                closeTabArea(tabArea->currentIndex());
+        if (m_Exit->clickedButton() == yes) {
+            while(tab_A->count() != 0){
+                closeTab_A(tab_A->currentIndex());
             }
             event->accept();
         }
@@ -188,11 +188,11 @@ QPlainTextEdit *textEdit = new QPlainTextEdit(this);
         return;
     data = file.readAll(); 
     QFileInfo fileInfo(fileName);
-    int newTab = tabArea->addTab(textEdit, fileInfo.fileName());
+    int newTab = tab_A->addTab(textEdit, fileInfo.fileName());
     tab_A->setTabToolTip(newTab, fileName);
     tab_A->setCurrentIndex(newTab);
     textEdit->setPlainText(data);
-    tab_A->setTabText(newTab, tabArea->tabText(newTab).remove(0,1));
+    tab_A->setTabText(newTab, tab_A->tabText(newTab).remove(0,1));
     setOnlyReadText = false;
 }
 
@@ -278,14 +278,14 @@ void EditorTexts::retranslateUI()
     action_Setings->setText(tr("Setings"));
     action_Help->setText(tr("About"));
 
-    M_Exit->setWindowTitle(tr("Exit"));
-    M_Exit->setText(tr("To exit the programm?"));
-    M_TabClose->setWindowTitle(tr("Close tab"));
-    M_TabClose->setText(tr("Save changes?"));
+    m_Exit->setWindowTitle(tr("Exit"));
+    m_Exit->setText(tr("To exit the programm?"));
+    m_TabClose->setWindowTitle(tr("Close tab"));
+    m_TabClose->setText(tr("Save changes?"));
     Ok->setText(tr("Ok"));
     Cancel->setText(tr("Cancel"));
-    yesClose->setText(tr("Ok"));
-    noClose->setText(tr("Cancel"));
+    OkClose->setText(tr("Ok"));
+    CancelClose->setText(tr("Cancel"));
 
     setting->retranslateUI();
     }
@@ -345,12 +345,12 @@ void EditorTexts::changeTab_A()
     }
 }
 
-void EditorTexts::closeTabArea(int _tab)
+void EditorTexts::closeTab_A(int _tab)
 {
-    if(tabArea->tabText(_tab)[0] == '*') {
-        messTabClose->setIcon(QMessageBox::Information);
-        messTabClose->exec();
-        if (messTabClose->clickedButton() == yesClose){
+    if(tab_A->tabText(_tab)[0] == '*') {
+        m_TabClose->setIcon(QMessageBox::Information);
+        m_TabClose->exec();
+        if (m_TabClose->clickedButton() == OkClose){
             on_buttonSave_clicked(); 
         }
     }
