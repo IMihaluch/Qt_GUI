@@ -23,7 +23,7 @@ public:
     void push_button_2_clicked();
     void push_button_3_clicked();
 private:
-    graphicsEditor *GrafEdit {nullptr};
+    graphic_elements *GrafElement {nullptr};
 
 };
 
