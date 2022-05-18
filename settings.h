@@ -24,7 +24,7 @@ private:
         QString qss;
 
 QTranslator *translator {nullptr};
-QTranslator *translatorStandart {nullptr};
+
 
         QLabel *labelOpen {nullptr};
         QLineEdit *editOpen {nullptr};
