@@ -9,9 +9,9 @@
 #include <QtGui>
 #include <QMainWindow>
 
-#include "rectangle.h"
-#include "ellipse.h"
-#include "star.h"
+#include "figure.h"
+#include "figure_afte.h"
+
 
 class graphicsEditor : public QGraphicsView
 {
