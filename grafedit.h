@@ -31,8 +31,8 @@ public slots:
 
 protected:
     void mousePressEvent(QMouseEvent *event) override;
-    void wheelEvent(QWheelEvent* event) override;
-    void keyPressEvent(QKeyEvent * event) override;
+    void wheelEvent(QWheelEvent *event) override;
+    void keyPressEvent(QKeyEvent *event) override;
 };
 
 #endif // GRAFEDIT_H
