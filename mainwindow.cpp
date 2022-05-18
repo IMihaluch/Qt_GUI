@@ -5,9 +5,10 @@ MainWindow::MainWindow(QWidget *parent)
 {
     mainGrid = new QGridLayout(this);
 
-    push_button_1 = new QPushButton(this);
-     GrafEdit = new graphicsEditor(this);
-    GrafEdit->setWindowFlags(Qt::Window);
+    push_button_1 = new QPushButton(this);   
+
+    GrafElement = new GrafElement(this);
+    GrafElement->setWindowFlags(Qt::Window);
 
 
     push_button_1->setText("Task 1");
@@ -23,5 +24,5 @@ MainWindow::MainWindow(QWidget *parent)
 
 void MainWindow::push_button_1_clicked()
 {
-    GrafEdit->show();
+    GrafElement->show();
 }
