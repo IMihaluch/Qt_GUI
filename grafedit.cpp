@@ -31,16 +31,16 @@ void graphic_elements::mousePressEvent(QMouseEvent *event)
         QPoint p = event->pos();
         if(typeFigure == 1) 
 {
-            Rect *rect = new Rect(&p);
-            scence->addItem(rect);
-            QObject::connect(rect, &Rect::reDraw, this, &graphic_elements::updateView);
+            Figure *figure = new Figure(&p);
+            scence->addItem(figure);
+            QObject::connect(figure, &Figure::reDraw, this, &graphic_elements::updateView);
             typeFigure = 2;
         } 
 else if(typeFigure == 2) 
 {
-            Figure *el = new Figure(&p);
-            scence->addItem(el);
-            QObject::connect(el, &Figure::reDraw, this, &graphic_elements::updateView);
+            Figure_afte *fa = new Figure_afte(&p);
+            scence->addItem(fa);
+            QObject::connect(fa, &Figure_afte::reDraw, this, &graphic_elements::updateView);
             typeFigure = 1;
         }
 }
