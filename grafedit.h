@@ -13,10 +13,10 @@
 #include "figure_afte.h"
 
 
-class graphicsEditor : public QGraphicsView
+class graphic_elements : public QGraphicsView 
 {
 public:
-    graphicsEditor(QWidget *parent = nullptr);
+    graphic_elements(QWidget *parent = nullptr);
 
 private:
     QGraphicsView *view;
