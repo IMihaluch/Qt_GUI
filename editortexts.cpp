@@ -399,7 +399,7 @@ void EditorTexts::on_action_Print_clicked()
        return;
    QWidget *widg = tab_A->currentWidget();
    QTextEdit *editorTexts = static_cast<QTextEdit*>(widg);
-   EditorTexts->print(&printer);
+   editorTexts->print(&printer);
 }
 
 void EditorTexts::changeTab_A()
@@ -407,7 +407,7 @@ void EditorTexts::changeTab_A()
     QWidget *widg = tab_A->currentWidget();
     if(widg) {
         QTextEdit *editorTexts = static_cast<QTextEdit*>(widg);
-        find->setTextEdit(EditorText);
+        find->setTextEdit(editorTexts);
     }
 }
 
