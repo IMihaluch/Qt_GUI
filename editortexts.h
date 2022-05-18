@@ -41,13 +41,13 @@ void inline createMenu();
 
 
     Settings *setting {nullptr};
-    QMenuBar *M_bar {nullptr};
-    QMenu *file_M {nullptr};
-    QMenu *edit_M {nullptr};
-    QMenu *help_M {nullptr};
+    QMenuBar *menu_bar {nullptr};
+    QMenu *file_menu {nullptr};
+    QMenu *edit_menu {nullptr};
+    QMenu *help_menu {nullptr};
 
     QToolBar *file_ToolBar {nullptr};
-    QToolBar *format-TextToolBar {nullptr};
+    QToolBar *format_TextToolBar {nullptr};
     QToolBar *about_ToolBar {nullptr};
 
 
