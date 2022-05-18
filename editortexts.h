@@ -77,7 +77,7 @@ public slots:
     void switch_HKeySave(unsigned int _mod, int _key);
     void switch_HKeyClear(unsigned int _mod, int _key);
     void switch_HKeyExit(unsigned int _mod, int _key);
-    void on_actionFilePrint_clicked();
+    void on_action_Print_clicked();
     void changeTab_A();
     void closeTab_A(int _tab);
     void planTexteChange();
