@@ -73,10 +73,10 @@ public slots:
 
     void retranslateUI();
     void redrawUI(QString _qss, QPalette _palette);
-    void swtHotKeyOpen(unsigned int _mod, int _key);
-    void swtHotKeySave(unsigned int _mod, int _key);
-    void swtHotKeyClear(unsigned int _mod, int _key);
-    void swtHotKeyExit(unsigned int _mod, int _key);
+    void switch_HKeyOpen(unsigned int _mod, int _key);
+    void switch_HKeySave(unsigned int _mod, int _key);
+    void switch_HKeyClear(unsigned int _mod, int _key);
+    void switch_HKeyExit(unsigned int _mod, int _key);
     void on_actionFilePrint_clicked();
     void changeTab_A();
     void closeTab_A(int _tab);
