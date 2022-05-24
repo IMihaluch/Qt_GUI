@@ -1,4 +1,4 @@
-#include "System_viewer.h"
+#include "system_viewer.h"
 
 System_viewer::System_viewer(QWidget *parent) : QWidget(parent)
 {
