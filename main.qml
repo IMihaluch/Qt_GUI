@@ -43,8 +43,8 @@ Window  {
         rowSpacing: 5
         anchors.fill: parent
         Rectangle {
-            height: (_mainWindow.height*3)/4
-            width: _mainWindow.width
+            height: (_main.height*3)/4
+            width: _main.width
             Layout.columnSpan: 3
             Layout.rowSpan: 1
             Layout.row: 0
@@ -82,7 +82,6 @@ Window  {
                 }
             }
         }
-
 
         Rectangle{
             height: 20
