@@ -3,15 +3,15 @@
 #include <QDebug>
 #include <QWidget>
 
-#include "organizer.h"
 #include "organizermod.h"
 #include <QApplication>
+#include <QTableView>
 
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
 
-    qmlRegisterType<Organizer>("Organizer", 1,0, "Organizer");
+    
     qmlRegisterType<Organizermod>("Organizermod", 1, 0, "Organizermod");
 
     const QIcon mainIcon = QIcon::fromTheme("mainIcon", QIcon(":/img/image.png"));
