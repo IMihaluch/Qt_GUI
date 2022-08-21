@@ -1,5 +1,5 @@
-#ifndef ORGANIXER_H
-#define ORGANIXER_H
+#ifndef ORGANIZER_H
+#define ORGANIZER_H
 
 #include <QObject>
 #include <QString>
@@ -29,4 +29,4 @@ signals:
 
 };
 
-#endif // ORGANIXER_H
+#endif // ORGANIZER_H
