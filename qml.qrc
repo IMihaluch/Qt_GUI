@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ButtonA.qml</file>
+        <file>ButtonD.qml</file>
+    </qresource>
+    <qresource prefix="/img">
+        <file>background.jpg</file>
+        <file>aPres.png</file>
+        <file>aRelease.png</file>
+        <file>delPres.png</file>
+        <file>delRelease.png</file>
+        <file>image.png</file>
+    </qresource>
+</RCC>
