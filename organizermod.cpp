@@ -33,7 +33,7 @@ Organizermod::~Organizermod()
 void Organizermod::addObjectFromBD()
 {
      QSqlQuery query(database);
-    query.exec("SELECT name,deadLine,progress from TaskManager");
+    query.exec("SELECT name,deadLine,progress from organizer");
     this->setQuery(query);
   
     this->setHeaderData(0, Qt::Horizontal, tr("Наименование"));
