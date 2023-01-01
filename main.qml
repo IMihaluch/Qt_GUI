@@ -186,7 +186,7 @@ Window  {
                 onClicked: {
                     if(_txtTaskName.text.length != 0 &&
                             _txtDeadLine.text.length == 10 &&
-                            _sbProgress.displayText.length != 0) {*_Organizer.Write = _txtTaskName.text + ";;" + _txtDeadLine.text + ";;" + _sbProgress.displayText
+                            _sbProgress.displayText.length != 0) {_Organizer.Write = _txtTaskName.text + ";;" + _txtDeadLine.text + ";;" + _sbProgress.displayText
                     _Organizermod.addObject(_txtTaskName.text, _txtDeadLine.text, _sbProgress.displayText)
                     }
                 }
@@ -210,3 +210,5 @@ Window  {
                             
                             
              
+}
+}
