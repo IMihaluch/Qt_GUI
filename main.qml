@@ -175,7 +175,7 @@ Window  {
             Layout.row: 3
             Layout.column: 2
 
-            AcceptButton {
+            ButtonA {
                 id: _btnOK
                 ToolTip{
                     text: "Принять"
@@ -192,7 +192,7 @@ Window  {
                 }
             }
 
-            DeleteButton {
+            ButtonD {
                 id: _btnDel
                 ToolTip{
                     text: "Удалить"
