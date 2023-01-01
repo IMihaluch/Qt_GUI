@@ -6,10 +6,10 @@
     </qresource>
     <qresource prefix="/img">
         <file>background.jpg</file>
-        <file>aPres.png</file>
-        <file>aRelease.png</file>
-        <file>delPres.png</file>
-        <file>delRelease.png</file>
+        <file>acceptPres.png</file>
+        <file>acceptRelease.png</file>
+        <file>deletePres.png</file>
+        <file>deleteRelease.png</file>
         <file>image.png</file>
     </qresource>
 </RCC>
