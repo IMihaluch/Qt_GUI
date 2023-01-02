@@ -1,4 +1,4 @@
-QT += QT += quickwidgets \
+QT += quickwidgets \
       qml \
       core \
       gui
