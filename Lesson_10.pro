@@ -1,4 +1,7 @@
-QT += quick
+QT += QT += quickwidgets \
+      qml \
+      core \
+      gui
 
 SOURCES += \
         organizer.cpp \
