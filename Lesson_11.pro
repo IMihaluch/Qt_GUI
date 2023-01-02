@@ -1,7 +1,8 @@
 QT += quickwidgets \
       qml \
       core \
-      gui
+      gui \
+      sql
 
 SOURCES += \
         organizermod.cpp \
