@@ -149,7 +149,7 @@ Window  {
             inputMethodHints: Qt.ImhDigitsOnly
             verticalAlignment: TextInput.AlignVCenter
             horizontalAlignment: TextInput.AlignHCenter
-            validator: RegularExpressionValidator { regularExpression: /^[0-9]{2}\.[0-9]{2}\.[0-9]{4}$/}
+           // validator: RegularExpressionValidator { regularExpression: /^[0-9]{2}\.[0-9]{2}\.[0-9]{4}$/}
 
             Layout.row: 2
             Layout.column: 1
