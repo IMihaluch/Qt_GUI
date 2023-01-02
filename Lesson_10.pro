@@ -25,5 +25,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 #    ButtonA.qml \
 #    ButtonD.qml \
 HEADERS += \
-    organizer.h
-    organigermod.h
+    organizer.h \
+    organizermod.h
