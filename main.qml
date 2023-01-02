@@ -18,11 +18,11 @@ Window  {
     title: qsTr("Органайзер")
 
     Component.onCompleted: startupFunction();
-    onClosing: { 
-    }
+    //onClosing: { 
+    //}
 
     BorderImage {
-        source: "qrc:///img/background.jpg"
+        source: "qrc:/img/background.jpg"
         anchors.fill: parent
     }
 
