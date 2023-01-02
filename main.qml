@@ -22,7 +22,7 @@ Window  {
     }
 
     BorderImage {
-        source: "qrc:///img/background.jpg"
+        source: "qrc:/img/background.jpg"
         anchors.fill: parent
     }
 
